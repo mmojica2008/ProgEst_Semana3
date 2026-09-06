@@ -7,9 +7,8 @@ try:
     año_nac = int(input("Dime en que año naciste: "))
     edad = date.today().year - año_nac
     if edad >= 18:
-        print("Usted es mayor de edad")
+        print(Fore.GREEN + "Usted es mayor de edad." + Style.RESET_ALL)
     else:
-        print("Usted es menor de edad")
+        print(Fore.RED + "Usted es menor de edad." + Style.RESET_ALL)
 except ValueError:
-    print("Ingrese un valor numerico")
-    print(Fore.RED + "Ingrese un valor numerico." + Style.RESET_ALL)
+    print(Fore.YELLOW + "Ingrese un valor numerico." + Style.RESET_ALL)
